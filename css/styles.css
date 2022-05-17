@@ -17,6 +17,12 @@
 
     --button-hero-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     --card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    --bg-color-hero: rgba(47, 48, 58, 0.4);
+    --bg-second-color: #C4C4C4;
+
+    --box-shadow-color: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    --box-shadow-sec-color: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+    --box-shadow-carts: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
 body {
@@ -125,6 +131,11 @@ img {
 .team-image {
     margin-right: 30px;
     width: 270px;
+
+    background: var(--main-white-color);
+    box-shadow: var(--box-shadow-sec-color);
+    margin-right: 30px;
+    font-size: 0px;
 }
 
 .team-image:last-child {
@@ -259,6 +270,15 @@ img {
     padding-bottom: 200px;
 }
 
+.overlay {
+    max-width: 1600px;
+    background-image: linear-gradient(to bottom, var(--bg-color-hero), var(--bg-color-hero)), url(../images/HeroImg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--bg-second-color);
+}  
+
 .hero-title {
     
     margin-bottom: 30px;
@@ -333,6 +353,14 @@ img {
     letter-spacing: 0.03em;
     
     color: var(--primary-text-color);
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    background-color: var(--gray-background);
+
+    margin-bottom: 30px;
 }
 
 /*Чем мы занимаемся*/
@@ -554,6 +582,13 @@ img {
 
 .button-item {
     margin-right: 8px;
+}
+
+.button-item:hover,
+.button-item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .button-item:last-child {
