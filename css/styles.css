@@ -4,7 +4,9 @@
     --accent-color: #2196F3;
     --gray-background: #F5F4FA;
     --main-color: #FFFFFF;
-    --icon-color: #AFB1B8; 
+    --icon-color: #AFB1B8;
+    --icon-color-background: #44454E;
+    
 
     --section-background: #E5E5E5;
     --footer--header-background: #2F303A;
@@ -358,8 +360,10 @@ img {
 .features {
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: 270px;
     background-color: var(--gray-background);
-
     margin-bottom: 30px;
 }
 
@@ -470,13 +474,12 @@ img {
 
 .socials-icon {
     fill: currentColor;
-
 }
 
 
 
 /*Клиенты*/
-.clients-list {
+.clients {
     display: flex;
     flex-wrap: wrap;
     /*justify-content: center;
@@ -484,13 +487,26 @@ img {
     cursor: pointer;
 }
 
+.clients-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-.clients-link:hover,
-.link-client:focus {
-    border: 1px solid var(--accent-color);
-    background-color: var(--main-color);
+    width: 170px;
+    height: 92px;
+
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+}
+
+.clients-link:hover {
+    border-color: var(--accent-color);
+}
+
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
     fill: var(--accent-color);
-  }
+} 
 
 .clients-item {
     display: flex;
@@ -756,7 +772,7 @@ img {
 
     width: 44px;
     height: 44px;
-    background-color: var(--primary-text-color);
+    background-color: var(--icon-color-background);
     color: var(--main-color);
 
     border-radius: 50%;
