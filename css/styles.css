@@ -267,6 +267,8 @@ img {
 
 .hero {
     background: var(--footer--header-background);
+
+    margin: 0 auto;
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -277,6 +279,9 @@ img {
     background-image: linear-gradient(to bottom, var(--bg-color-hero), var(--bg-color-hero)), url(../images/HeroImg.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-position-x: center;
+    background-position-y: center;
+    
     background-size: cover;
     background-color: var(--bg-second-color);
 }  
