@@ -144,6 +144,9 @@ img {
     margin-right: 0;
 }
 
+.socials-icons:not(:last-child) {
+    margin-right: 10px;
+}
 
 .site-nav-item { 
     /* margin-right: 50px; */
@@ -279,9 +282,7 @@ img {
     background-image: linear-gradient(to bottom, var(--bg-color-hero), var(--bg-color-hero)), url(../images/HeroImg.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-position-x: center;
-    background-position-y: center;
-    
+        
     background-size: cover;
     background-color: var(--bg-second-color);
 }  
@@ -497,8 +498,8 @@ img {
     align-items: center;
     justify-content: center;
 
-    width: 170px;
-    height: 92px;
+    width: 100%;
+    height: 100%;
 
     border: 1px solid var(--icon-color);
     border-radius: 4px;
@@ -513,18 +514,13 @@ img {
     fill: var(--accent-color);
 } 
 
+/*
 .clients-item {
-    display: flex;
-    display: flex;
     height: 92px;
-    border-radius: 4px;
-    border: 1px solid var(--icon-color);
-    background-color: var(--main-color);
-    justify-content: center;
     align-items: center;
     width: calc((100% - 150px) / 6);
 
-}
+} */
 
 .clients-item:not(:last-child) {
     margin-right: 30px;
@@ -542,6 +538,7 @@ img {
 /*Button*/
 
 .button {
+    border: transparent;
     display: inline-block;
     min-width: 73px;
     min-height: 38px;
@@ -565,6 +562,9 @@ img {
 .button:focus {
     background-color: var(--accent-color);
     color: var(--main-color);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .button-hero {
@@ -610,12 +610,10 @@ img {
     margin-right: 8px;
 }
 
-.button-item:hover,
+/* .button-item:hover,
 .button-item:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-    0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+    
+} */
 
 .button-item:last-child {
     margin-right: 0;
@@ -638,12 +636,18 @@ img {
     margin-bottom: 30px;
 }
 
-.project-items:hover {
+/* .project-items:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
+*/
+.project-link:hover,
+.project-link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 .project-items {
     flex-basis: calc((100% - 60px) / 3);
