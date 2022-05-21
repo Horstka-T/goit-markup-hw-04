@@ -522,18 +522,20 @@ img {
 
 } */
 
+.clients-item {
+    width: 170px;
+    height: 92px;
+}
+
 .clients-item:not(:last-child) {
     margin-right: 30px;
 }
 
 .clients-icon {
     fill: var(--icon-color);
+
 }
 
-.clients-icon:hover,
-.clients-icon:focus {
-    fill: var(--accent-color);
-}
 
 /*Button*/
 
